@@ -1,0 +1,28 @@
+{
+  "name": "node-file-server",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.1.0",
+    "nodemon": "^2.0.2",
+    "semantic-release": "^17.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amitdu/node-static-server.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
