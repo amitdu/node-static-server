@@ -26,8 +26,12 @@ app.get('*', (req, res) => {
     let pathname = `.${parsedUrl.pathname}`;
     let ext = path.parse(pathname).ext;
     console.log(pathname, ext);
+    pathname = pathname.replace('/en', '');
     if (pathname == './') {
         pathname = './index.html'
+        ext = '.html';
+    } else if (pathname.endsWith('/')) {
+        pathname += './index.html'
         ext = '.html';
     } else if (!ext) {
         pathname += '.html';
